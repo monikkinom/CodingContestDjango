@@ -2,10 +2,10 @@
 
 This is a Django app for hosting a coding contest with a judge.
 
-Two types of questions can be made : 
+Two types of questions can be made : <br/>
 1. Questions with description and sample Input/Output followed by test input. User must paste the correct output to the problem
-set.
-2. Multiple Choice Questions
+set.<br/>
+2. Multiple Choice Questions<br/>
 
 There is a timer that ticks off the moment user logs in for the first time. After a certain period, no submissions
 can be made from a particular user.
