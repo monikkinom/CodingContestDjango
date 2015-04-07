@@ -10,7 +10,7 @@ set.
 There is a timer that ticks off the moment user logs in for the first time. After a certain period, no submissions
 can be made from a particular user.
 
-A scoreboard feature has been made to view all teams in order their ranks and scores on /scoreboard/.
+A scoreboard feature (only accessible to admin) has been made to view all teams in order of their ranks and scores on /scoreboard/.
 
 To create a user, a user must be first made on Django admin and a corresponding user profile object must also be made.
 
