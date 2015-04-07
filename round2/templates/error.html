@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60168407-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="loginbg">
+<div class="container">
+         <div class="row welcome">Something Went Wrong!</div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <a class="btn btn-lg btn-success btn-block" href="/home/">Back to Home!</a>
+            </div>
+        </div>
+</div>
+<div class="yolo" style="display: none;"></div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.min.js"></script>
+<script>
+$(document).ready(function(){
+    settimer('{{ request.session.starttime }}',parseInt({{ request.session.timeout }}))
+});
+</script>
+</body>
+</html>

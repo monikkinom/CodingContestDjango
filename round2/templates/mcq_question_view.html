@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+    <link href="/static/css/jquery.countdown.css" rel="stylesheet">
+</head>
+<body class="loginbg">
+<div class="container" style="width: 96% !important;">
+         <div class="row" >
+            <div class="col-md-4 logoacm">
+            </div>
+            <div class="col-md-8 lgnwelcome">
+                DJSCE ACM Codeception Round 1
+            </div>
+        </div>
+         <div class="row hometoprow">
+         <div class="col-md-2">
+             <a style="margin-top: 2.5em;" href="/home/" class="btn loginformdiv btn-lg btn-primary btn-block">Back To Home</a>
+         </div>
+         <div class="col-md-4 col-md-offset-2 timerwelcome yolo" style="line-height: 2em;"></div>
+{#         <div class="col-md-2 col-md-offset-2">#}
+{#             <a style="margin-top: 2.5em;" href="/scoreboard/" class="btn loginformdiv btn-lg btn-success btn-block">Scoreboard</a>#}
+{#         </div>#}
+         </div>
+         <div class="row insbg instext">
+            <h1>Question </h1>
+            <label class="instext">Points&NonBreakingSpace;:&NonBreakingSpace;</label>{{ question.marks }}<br/>
+            <label class="instext">Question&NonBreakingSpace;:&NonBreakingSpace;</label>
+             {% autoescape off %}
+                {{ question.notes|linebreaks|safe }}
+             {% endautoescape %}
+            <div class="row">
+                <div class="col-md-10">
+                    <form id="saveans" method="post" action="/mcqquestions/">
+                        <input type="radio" name="answer" value="1">&NonBreakingSpace;&NonBreakingSpace;{{ question.optiona }}
+                        <br>
+                        <input type="radio" name="answer" value="2">&NonBreakingSpace;&NonBreakingSpace;{{ question.optionb }}
+                        <br>
+                        <input type="radio" name="answer" value="3">&NonBreakingSpace;&NonBreakingSpace;{{ question.optionc }}
+                        <br>
+                        <input type="radio" name="answer" value="4">&NonBreakingSpace;&NonBreakingSpace;{{ question.optiond }}
+                        <br>
+                        <input type="hidden" name="no" value="{{ question.pk }}">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" style="text-align: center;">
+                 <div class=" col-md-2 col-md-offset-5">
+                    <button style="margin-top: 1em;" onclick="$('#saveans').submit();" class="btn loginformdiv btn-lg btn-success btn-block">Submit Answer</button>
+                </div>
+            </div>
+
+
+
+
+         </div>
+</div>
+
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.plugin.min.js"></script>
+<script src="/static/js/jquery.countdown.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.min.js"></script>
+<script>
+$(document).ready(function(){
+    settimer('{{ request.session.starttime }}',parseInt({{ request.session.timeout }}))
+});
+</script>
+</body>
+</html>

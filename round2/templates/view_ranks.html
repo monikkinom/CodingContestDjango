@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+    <link href="/static/css/jquery.countdown.css" rel="stylesheet">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60168407-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="loginbg">
+<div class="container">
+         <div class="row hometoprow">
+             <div class="col-md-2">
+                 <a style="margin-top: 2.5em;" href="/home/" class="btn loginformdiv btn-lg btn-primary btn-block">Back To Home</a>
+             </div>
+             <div class="welcome col-md-8">Leaderboard</div>
+             <div class="col-md-2"></div>
+         </div>
+         {% for user in rank_list %}
+             <div class="row rankbg">
+                 <div class="pull-left ranktext">{{ forloop.counter }}.     {{user.user.username }}</div>
+             <div class="pull-right ranktext">{{ user.score }}</div>
+             </div>
+         {% endfor %}
+</div>
+<div class="yolo" style="display: none;"></div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.plugin.min.js"></script>
+<script src="/static/js/jquery.countdown.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.min.js"></script>
+<script>
+$(document).ready(function(){
+    settimer('{{ request.session.starttime }}',parseInt({{ request.session.timeout }}))
+});
+</script>
+</body>
+</html>

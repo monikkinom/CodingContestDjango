@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+</head>
+<body class="loginbg">
+<div class="container" style="width: 96% !important;">
+        <div class="row">
+            <div class="col-md-4 logoacm">
+            </div>
+            <div class="col-md-8 lgnwelcome">
+                DJSCE ACM Codeception Round 1
+            </div>
+        </div>
+
+        <div id="loginbox" style="margin-top:75px;" class="mainbox col-md-4 col-md-offset-4">
+            <div class="panel  panel-extra panel-default loginformdiv" >
+                    <div class="panel-heading panel-heading-extra ">
+                        <div class="panel-title panel-title-extra">Login to Hack Round 1 !</div>
+                    </div>
+                    <div class="panel-body" >
+                  {% if wrong_details %}
+                           <div class="credsinfo">Wrong Credentials!</div>
+                      {% endif %}
+                     {% if account_disabled %}
+                        <div class="credsinfo">Your submissions have been recorded!</div>
+                         {% endif %}
+
+                       <form id="login_form" method="post" action="/">
+                            <div style="margin-bottom: 25px" class="input-group">
+                                <span class="input-group-addon input-extra"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="login-username" type="text" class="form-control input-extra input-lg" name="username" value="" placeholder="Username">
+                            </div>
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                <span class="input-group-addon input-extra"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control input-extra input-lg" name="password" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.min.js"></script>
+<script>
+$(document).ready(function() {$("input:text:visible:first").focus();});
+</script>
+</body>
+</html>

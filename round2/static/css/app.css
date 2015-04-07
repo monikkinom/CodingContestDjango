@@ -1,0 +1,196 @@
+.loginbg
+{
+    background-image: url("/static/img/code-wallpaper.jpeg");
+}
+.loginformdiv
+{
+    box-shadow: 4px 3px 10px #333333;
+}
+
+.logoacm
+{
+    background-image: url("/static/img/logo.png");
+    background-repeat: no-repeat;
+    background-origin: 0 0;
+    height: 120px;
+
+}
+
+.panel-heading-extra
+{
+    color: #FFF!important;
+    background-color: transparent!important;
+    border-color: transparent !important;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+}
+
+.questiontype
+{
+    color: #FFF!important;
+    background-color: transparent!important;
+    border-color: transparent !important;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+    font-size: 1.5em;
+}
+
+.panel-extra
+{
+    border-color: transparent !important;
+    border-radius: 4px !important;
+    background: rgba(190,190,190,0.25) !important;
+}
+
+.input-extra
+{
+     background: rgba(190,190,190,0.25) !important;
+    color:#ffffff;
+}
+
+.panel-title-extra
+{
+    font-size: 22px !important;
+    text-align: center;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus
+{
+  border-color: rgba(255, 255, 251, 0.80);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 251, 0.60);
+  outline: 0 none;
+}
+
+.credsinfo
+{
+    color:#fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.welcome
+{
+    color:#fff;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+}
+
+.lgnwelcome
+{
+    color:#fff;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.2em;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+    line-height: 110px;
+}
+
+.homewelcome
+{
+    color:#fff;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+}
+
+.timerwelcome
+{
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+}
+
+.hometoprow
+{
+    margin-bottom: 30px;
+}
+
+.rankbg
+{
+    background-color: #fff ! important;
+    border-radius: 4px !important;
+    margin: 10px 10px !important;
+    height: 50px !important;
+    line-height: 50px;
+    box-shadow: 4px 3px 10px #333333;
+}
+
+.questionbg
+{
+    background-color: #fff ! important;
+    border-radius: 4px !important;
+    margin: 10px 10px !important;
+    height: 75px !important;
+    line-height: 75px;
+    box-shadow: 4px 3px 10px #333333;
+}
+
+.ranktext
+{
+    color: #666!important;
+    font-size: 22px;
+}
+
+.pull-left
+{
+    padding-left : 20px !important;
+}
+
+.pull-right
+{
+    padding-right : 20px !important;
+}
+
+.sbtn
+{
+    width: 200px !important;
+}
+
+.yolo
+{
+    margin-top: 25px;
+    height: 60px;
+    background: transparent!important;
+    border-color: transparent!important;
+}
+
+.insbg
+{
+    background-color: #fff ! important;
+    border-radius: 4px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 3px 10px #333333;
+    padding: 10px 20px;
+}
+
+.instext
+{
+    color: #666!important;
+    font-size: 20px;
+}
+
+.txta
+{
+    width: 100%;
+    resize: vertical;
+    height: 200px;
+}
+
+.welcim
+{
+    color:#fff;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 0px 1px 2px rgba(0,0,0,1);
+}
