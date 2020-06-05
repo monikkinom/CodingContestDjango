@@ -1,5 +1,5 @@
 dj-database-url==0.3.0
-Django==1.7
+Django==1.11.29
 MySQL-python==1.2.3
 oauthlib==0.6.1
 psycopg2==2.5.4
