@@ -8,7 +8,7 @@ urllib3==1.7.1
 wsgiref==0.1.2
 feedparser==5.1
 gunicorn==19.2.1
-lxml==2.3.3
+lxml==4.6.2
 python-dateutil==1.5
 python-sunlightapi==1.1.0
 Pillow==2.3.0
