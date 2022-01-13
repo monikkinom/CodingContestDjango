@@ -11,5 +11,5 @@ gunicorn==19.2.1
 lxml==2.3.3
 python-dateutil==1.5
 python-sunlightapi==1.1.0
-Pillow==2.3.0
+Pillow==9.0.0
 whitenoise==1.0.6
